@@ -7,6 +7,7 @@
 #         self.right = None
 
 class Solution(object):
+    
     def isSameTree(self, p, q):
         """
         :type p: TreeNode
