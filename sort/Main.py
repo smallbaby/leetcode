@@ -76,6 +76,9 @@ qs = lambda x:[]  if len(x) == 0 else qs([i for i in x if i < x[0]]) + [x[0]] + 
 
 
 
+f = lambda x:[] if len(x) == 0 else f() + [f[0]] + f()
+
+
 
 def q_s(li, l, r):
     if l > r:
@@ -95,14 +98,6 @@ def q_s(li, l, r):
     return li
 
 
-
-
-
-
-
-
-#
-# print q_s(a, 0, len(a)-1)
 
 
 
